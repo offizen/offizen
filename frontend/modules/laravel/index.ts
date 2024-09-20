@@ -83,7 +83,7 @@ declare module "nuxt/schema" {
 
 export default defineNuxtModule<Options>({
 	meta: {
-		name: "@staffkit/nuxt-laravel",
+		name: "@offizen/nuxt-laravel",
 		configKey: "laravel",
 		compatibility: {
 			nuxt: "^3.0.0",

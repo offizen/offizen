@@ -48,12 +48,12 @@ jobs:
             name: MySQL
             host: '127.0.0.1'
             port: 3307
-            database: 'staffkit'
+            database: 'offizen'
           - driver: 'postgres'
             name: PostgreSQL
             host: '127.0.0.1'
             port: 5433
-            database: 'staffkit'
+            database: 'offizen'
           - driver: 'sqlite'
             name: SQLite
             database: ':memory:'
@@ -61,9 +61,9 @@ jobs:
       postgres:
         image: ${{ matrix.driver == 'postgres' && 'postgres:16.3' || '' }}
         env:
-          POSTGRES_USER: staffkit
-          POSTGRES_PASSWORD: staffkit
-          POSTGRES_DB: staffkit
+          POSTGRES_USER: offizen
+          POSTGRES_PASSWORD: offizen
+          POSTGRES_DB: offizen
         options: >-
           --health-cmd pg_isready
           --health-interval 10s
@@ -74,10 +74,10 @@ jobs:
       mysql:
         image: ${{ matrix.driver == 'mysql' && 'mysql:9.0' || '' }}
         env:
-          MYSQL_ROOT_PASSWORD: staffkit
-          MYSQL_DATABASE: staffkit
-          MYSQL_USER: staffkit
-          MYSQL_PASSWORD: staffkit
+          MYSQL_ROOT_PASSWORD: offizen
+          MYSQL_DATABASE: offizen
+          MYSQL_USER: offizen
+          MYSQL_PASSWORD: offizen
         options: >-
           --health-cmd "mysqladmin ping"
           --health-interval 10s
@@ -103,5 +103,5 @@ jobs:
           DB_HOST: ${{ matrix.host }}
           DB_PORT: ${{ matrix.port }}
           DB_DATABASE: ${{ matrix.database }}
-          DB_USERNAME: staffkit
-          DB_PASSWORD: staffkit
+          DB_USERNAME: offizen
+          DB_PASSWORD: offizen

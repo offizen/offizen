@@ -1,10 +1,10 @@
 {
     "biome.projects": [
         {
-            "path": "frontend"
-        }, 
-        {
             "path": "backend"
+        },
+        {
+            "path": "frontend"
         }
     ]
 }
