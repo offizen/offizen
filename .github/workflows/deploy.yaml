@@ -14,12 +14,14 @@ jobs:
     uses: ./.github/workflows/integrate-frontend.yaml
 
   deploy-backend:
+    concurrency: deploy-backend
     name: Deploy (backend)
     secrets: inherit
     needs: [integrate-backend, integrate-frontend]
     uses: ./.github/workflows/deploy-backend.yaml
 
   deploy-frontend:
+    concurrency: deploy-frontend
     name: Deploy (frontend)
     secrets: inherit
     needs: [integrate-backend, integrate-frontend]
