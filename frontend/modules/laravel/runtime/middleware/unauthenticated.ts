@@ -1,7 +1,7 @@
 export const unauthenticated = defineNuxtRouteMiddleware(async () => {
-	const { authenticated } = useAuthentication();
+        const { authenticated } = useAuthentication();
 
-	if (authenticated.value === true) {
-		return useRuntimeConfig().public.laravel.authenticatedPage;
-	}
+        if (authenticated.value === true) {
+                return useRuntimeConfig().public.laravel.authenticatedPage;
+        }
 });

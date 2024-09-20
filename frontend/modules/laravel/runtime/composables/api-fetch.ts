@@ -1,3 +1,1 @@
-export const useApiFetch = () => {
-    
-};
+export const useApiFetch = () => {};

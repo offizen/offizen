@@ -1,20 +1,20 @@
 {
-	"name": "nuxt-app",
-	"private": true,
-	"type": "module",
-	"scripts": {
-		"build": "nuxt build",
-		"dev": "nuxt dev",
-		"generate": "nuxt generate",
-		"preview": "nuxt preview",
-		"postinstall": "nuxt prepare"
-	},
-	"dependencies": {
-		"defu": "^6.1.4",
-		"nuxt": "^3.13.2",
-		"vue": "latest"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "1.9.2"
-	}
+        "name": "nuxt-app",
+        "private": true,
+        "type": "module",
+        "scripts": {
+                "build": "nuxt build",
+                "dev": "nuxt dev",
+                "generate": "nuxt generate",
+                "preview": "nuxt preview",
+                "postinstall": "nuxt prepare"
+        },
+        "dependencies": {
+                "defu": "^6.1.4",
+                "nuxt": "^3.13.2",
+                "vue": "latest"
+        },
+        "devDependencies": {
+                "@biomejs/biome": "1.9.2"
+        }
 }

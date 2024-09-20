@@ -2,6 +2,6 @@ import { authenticated } from "~/modules/laravel/runtime/middleware/authenticate
 import { unauthenticated } from "~/modules/laravel/runtime/middleware/unauthenticated";
 
 export default defineNuxtPlugin(() => {
-	addRouteMiddleware("authenticated", authenticated);
-	addRouteMiddleware("unauthenticated", unauthenticated);
+        addRouteMiddleware("authenticated", authenticated);
+        addRouteMiddleware("unauthenticated", unauthenticated);
 });
