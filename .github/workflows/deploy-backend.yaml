@@ -18,8 +18,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Fly
-        uses: superfly/flyctl-actions@1.5
+      - name: Setup flyctl
+        uses: superfly/flyctl-actions/setup-flyctl@master
       - name: Setup SOPS
         uses: nhedger/setup-sops@v2
       - name: Stage secrets for next deployment
