@@ -23,6 +23,6 @@ jobs:
       - name: Setup SOPS
         uses: nhedger/setup-sops@v2
       - name: Stage secrets for next deployment
-        run: sops decrypt --input-type dotenv .env.enc | flyctl secrets import
+        run: sops decrypt --output-type dotenv .env.enc | flyctl secrets import
       - name: Deploy backend
         run: flyctl deploy --remote-only
