@@ -3,6 +3,7 @@
 ![Static Badge](https://img.shields.io/badge/swiss%20made-ff0000?style=flat&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2aWV3Qm94PSIwIDAgMzIgMzIiIHdpZHRoPSIzMnB4IiBoZWlnaHQ9IjMycHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI%2BCiAgPHBhdGggZD0ibTEzIDZoNnY3aDd2NmgtN3Y3aC02di03aC03di02aDd6IiBmaWxsPSIjZmZmIi8%2BCjwvc3ZnPg%3D%3D&labelColor=ff0000&color=27272a)
 ![GitHub License](https://img.shields.io/github/license/offizen/offizen?labelColor=%2327272a&color=blue)
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/offizen/offizen/integrate-backend.yaml?style=flat&labelColor=27272a&label=Integrate%20(backend))
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/offizen/offizen/integrate-frontend.yaml?style=flat&labelColor=27272a&label=Integrate%20(frontend))
 
 Offizen is an open-source human resources management system. It is designed to be a simple and easy-to-use tool for managing employees, their information, and their schedules.
 
