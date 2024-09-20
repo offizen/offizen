@@ -9,7 +9,7 @@ export const authorized = (permissions: string[]) =>
 	defineNuxtRouteMiddleware(async ({ meta }) => {
 		const { hasAnyPermissions } = useAuthorization();
 
-		if (!hasAnyPermissions(meta.requiredPermissions ? [])) {
+		if (!hasAnyPermissions(meta.requiredPermissions ?? [])) {
 			return useRuntimeConfig().public.laravel.authenticatedPage;
 		}
 	});
