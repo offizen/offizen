@@ -25,4 +25,4 @@ jobs:
       - name: Stage secrets for next deployment
         run: sops decrypt .env.enc | fly secrets import
       - name: Deploy frontend
-        run: flyctl deploy --remote-only
+        run: fly deploy --remote-only
