@@ -1,0 +1,28 @@
+name: Deploy (backend)
+
+on:
+  workflow_call:
+
+defaults:
+  run:
+    working-directory: backend
+
+env:
+  FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+  SOPS_AGE_KEY: ${{ secrets.SOPS_AGE_KEY }}
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Fly
+        uses: superfly/flyctl-actions/setup-flyctl@master
+      - name: Setup SOPS
+        uses: nhedger/setup-sops@v2
+      - name: Stage secrets for next deployment
+        run: sops decrypt .env | fly secrets import
+      - name: Deploy backend
+        run: flyctl deploy --remote-only

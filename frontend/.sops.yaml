@@ -1,0 +1,12 @@
+creation_rules:
+  - type: encrypted_file
+    encryption_method: age
+    key_groups:
+      - age:
+          # GitHub Actions' public key
+          - age1mrjfdn58dlq9g7aqmmm75mc78x5zuu6y0amyxmmqmlrxuvy0rdss66sagu
+          # Nicolas Hedger's public key
+          - age17ax80q637c8ujram8h0jjjjnt95lqhxzaslvscrl38t5ajzv6djsvfn8xh
+
+sops:
+  encryption_method: age

@@ -1,15 +1,7 @@
 name: Integrate (backend)
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'backend/**'
-  pull_request:
-    paths:
-      - 'backend/**'
-  workflow_dispatch:
+  workflow_call:
 
 defaults:
   run:
