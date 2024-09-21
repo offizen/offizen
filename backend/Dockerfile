@@ -6,7 +6,5 @@ ENV SERVER_NAME=:80
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini" \
  && composer install --no-dev --optimize-autoloader
 
-
-
 # Copy application code
 COPY . /app
