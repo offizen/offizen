@@ -7,6 +7,7 @@ on:
 jobs:
   integrate-backend:
     name: Integrate (backend)
+    secrets: inherit
     uses: ./.github/workflows/integrate-backend.yaml
 
   integrate-frontend:
