@@ -1,5 +1,5 @@
 ARG PHP_VERSION=8.3
-FROM dunglas/frankenphp:${PHP_VERSION}
+FROM dunglas/frankenphp:php${PHP_VERSION}
 
 ENV SERVER_NAME=:8080
 
