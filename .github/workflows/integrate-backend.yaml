@@ -15,6 +15,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Setup Neon
+        uses: nhedger/setup-neon@v1
+      - name: List branches
+        run: neon branches list
+        env:
+          NEON_API_KEY: ${{ secrets.NEON_API_KEY }}
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
